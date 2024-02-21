@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container-images{
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.slider-left{
+    height: 100%;
+    
+    width: 35%;
+    position: absolute;
+    transition: transform 0.5s ease-in-out;
+}
+
+button{
+    position: absolute;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    color: #aaa;
+    transition: all 0.3s;
+}
+button:hover{
+    color: #222;
+}
+
+button:focus{
+    outline: none;
+}
+
+.slider-left div{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #FFF;
+}
+
+.slider-left h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: -30px;
+}
+
+.slider-right {
+    height: 100%;
+    position: absolute;
+    left: 35%;
+    width: 65%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-right div{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+}
+
+.container-images .botoes button{
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    z-index: 100;
+}
+
+.image{
+   width: 70%;
+   float: right;
+   height: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.container-images .botoes .button-down{
+    transform: translateX(-100%);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.container-images .botoes .button-up{
+    transform: translateY(-100%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+
